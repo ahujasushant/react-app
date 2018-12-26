@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import './buttons/StartQuiz';
+import StartQuizButton from "./buttons/StartQuiz";
 
 class App extends Component {
   render() {
@@ -19,6 +21,7 @@ class App extends Component {
           >
             Learn React
           </a>
+            <StartQuizButton/>
         </header>
       </div>
     );
