@@ -1,15 +1,22 @@
 import React, { Component } from 'react';
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import Instructions from './instructions';
+import StartQuiz from './startQuiz';
+import Quiz from '../quiz/Quiz';
 import './Dashboard.css';
 
 class Dashboard extends Component {
   render() {
     return (
-      <div className='Dashboard'>
-        <h1>Quizapur</h1>
-        <p>Mirzapur dekhe ho be? Gaand na phulao, ma chod denge</p>
-        <p>Sawaal puchenge, varnamala nahi</p>
-        <p>Sab sahi bata diye to jaane denge</p>
-      </div>
+        <Router>
+        <div className='Dashboard'>
+          <header className="App-header">
+            <Instructions/>
+            <StartQuiz/>
+          </header>
+          <Route path="/quiz" component={Quiz} />
+       </div>
+      </Router>
     );
   }
 }
