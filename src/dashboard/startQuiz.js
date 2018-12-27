@@ -5,7 +5,7 @@ class StartQuiz extends Component {
   render() {
     return (
       <div>
-        <button><Link to="/quiz">StartQuiz</Link></button>     
+        <Link to="/quiz/1">StartQuiz</Link>    
       </div>
     );
   }
