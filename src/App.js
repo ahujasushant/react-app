@@ -1,30 +1,18 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
-// example to show the usage of react-feather
-// https://github.com/carmelopullara/react-feather
-import { Camera } from 'react-feather';
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import Dashboard from './dashboard/Dashboard';
+import Quiz from './quiz/Quiz';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <Camera size={48} className='App-link' />
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
+      <Router>
+        <div>
+          <Route exact path="/" component={Dashboard} />
+          <Route path="/quiz/:id" component={Quiz} />  
+         </div> 
+      </Router>
     );
   }
 }
