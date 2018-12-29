@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import Instructions from './instructions';
-import StartQuiz from './startQuiz';
+import Instructions from './Instructions';
+import StartQuizBtn from './StartQuizBtn';
 import './Dashboard.css';
 
 class Dashboard extends Component {
@@ -9,7 +9,7 @@ class Dashboard extends Component {
         <div className='Dashboard'>
           <header className="App-header">
             <Instructions/>
-            <StartQuiz/>
+            <StartQuizBtn/>
           </header>
        </div>
     );

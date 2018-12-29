@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
-class StartQuiz extends Component {
+class StartQuizBtn extends Component {
   render() {
     return (
       <div>
@@ -11,4 +11,4 @@ class StartQuiz extends Component {
   }
 }
 
-export default StartQuiz;
+export default StartQuizBtn;
