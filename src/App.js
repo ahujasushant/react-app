@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+// example to show the usage of react-feather
+// https://github.com/carmelopullara/react-feather
+import { Camera } from 'react-feather';
 
 class App extends Component {
   render() {
@@ -11,6 +14,7 @@ class App extends Component {
           <p>
             Edit <code>src/App.js</code> and save to reload.
           </p>
+          <Camera size={48} className='App-link' />
           <a
             className="App-link"
             href="https://reactjs.org"

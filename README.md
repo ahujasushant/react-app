@@ -66,3 +66,9 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+### Icon set
+
+This project uses [feather-icons](https://feathericons.com/).
+Find API documentation [github repo](https://github.com/feathericons/feather#feather)
+The project used here is [react-feather](https://github.com/carmelopullara/react-feather)
